@@ -1,0 +1,54 @@
+$borderColor: #12181a;
+$backgr: rgb(105, 84, 180);
+$linkColor: #360c02;
+$textColor: #e6c20e;
+$bgf:#d5f5ef;
+$font-family: 'Dancing Script', cursive;
+$tarpas: 2px;
+$pading:10px;
+
+@mixin flexColunm{
+    display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+
+}
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.virsus{
+    background-color: $bgf;
+    @include flexCenter();
+    h2{
+        color: $textColor;
+    }
+        
+}
+.vidurys{
+    
+    display: flex;
+    flex-direction: row;
+    margin: $tarpas;
+     
+    .contact{
+        padding-right: $pading;
+        flex:30%;
+        background: $bgf;
+        margin-right: $tarpas;
+        margin-top: -$tarpas;
+        
+        
+    }
+    .stuff{
+        
+        padding: $pading;
+        flex:70; 
+        background: $bgf;   
+        margin-top: -$tarpas;
+
+    }
+}
